@@ -7,14 +7,14 @@ public class Test {
 
         Koden er skrevet af Kenneth (s226410) og Mikkel (s224279)
 
-       Vi tester forekomsten af alle værdierne på terningen fra 2 til 12, og udprinter forekomsten af hvert tal i
-       forhold til det forventede på normalfordelingen som er med følgende sandsynligheder:
-       2 & 12 = 1/36
-       3 & 11 = 2/36 = 1/18
-       4 & 10 = 3/36 = 1/12
-       5 & 9 = 4/36 = 1/9
-       6 & 8 = 5/36
-       7 = 6/36 = 1/6
+        Vi tester forekomsten af alle værdierne på terningen fra 2 til 12, og udprinter forekomsten af hvert tal i
+        forhold til det forventede på normalfordelingen som er med følgende sandsynligheder:
+        2 & 12 = 1/36
+        3 & 11 = 2/36 = 1/18
+        4 & 10 = 3/36 = 1/12
+        5 & 9 = 4/36 = 1/9
+        6 & 8 = 5/36
+        7 = 6/36 = 1/6
         */
         int slag1, slag2, sum, sumtest, to, tre, fire, fem, seks, syv, otte, ni, ti, elleve, tolv;
         Random test = new Random();
