@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="470be466-cf68-4bbb-8620-2f463a1d5038" name="Changes" comment="First commit, questions and answers added to main project.">
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+    <list default="true" id="470be466-cf68-4bbb-8620-2f463a1d5038" name="Changes" comment="Test of main.java, testing methods of random dice roll within 5% of normal distribution.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663597205512</updated>
-      <workItem from="1663597207375" duration="1752000" />
+      <workItem from="1663597207375" duration="6245000" />
     </task>
     <task id="LOCAL-00001" summary="First commit, questions and answers added to main project.">
       <created>1663597416373</created>
@@ -66,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663597983515</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Test of main.java, testing methods of random dice roll within 5% of normal distribution.">
+      <created>1663599857152</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663599857152</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit, questions and answers added to main project." />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit, questions and answers added to main project." />
+    <MESSAGE value="Test of main.java, testing methods of random dice roll within 5% of normal distribution." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test of main.java, testing methods of random dice roll within 5% of normal distribution." />
   </component>
 </project>
