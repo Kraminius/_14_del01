@@ -35,7 +35,6 @@ Hvad beskriver “virker korrekt”, når det gælder test af 1000 kast.
     Indenfor 5% af variation af normalfordelingen.
 
 For info: hvis projektleder ikke kan svare, må du spørge kunden.
-
          */
     }
 }
