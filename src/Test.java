@@ -101,7 +101,7 @@ public class Test {
         }
         else {
             System.out.println("Værdien er udenfor normalfordelingen");
-
+            //Slut på program
         }
     }
 }
