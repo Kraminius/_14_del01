@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="470be466-cf68-4bbb-8620-2f463a1d5038" name="Changes" comment="Changed formatting to align code better. Non-functional update." />
+    <list default="true" id="470be466-cf68-4bbb-8620-2f463a1d5038" name="Changes" comment="Added comment at end of program line 104-104 //MJ">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663597205512</updated>
-      <workItem from="1663597207375" duration="7268000" />
+      <workItem from="1663597207375" duration="7851000" />
     </task>
     <task id="LOCAL-00001" summary="First commit, questions and answers added to main project.">
       <created>1663597416373</created>
@@ -85,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663604544746</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added comment at end of program line 104-104 //MJ">
+      <created>1663615076452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663615076452</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +116,7 @@
     <MESSAGE value="Test of main.java, testing methods of random dice roll within 5% of normal distribution." />
     <MESSAGE value="Finished test program for testing whether our program who calls Random, is within normal distribution (+- 5%)." />
     <MESSAGE value="Changed formatting to align code better. Non-functional update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed formatting to align code better. Non-functional update." />
+    <MESSAGE value="Added comment at end of program line 104-104 //MJ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comment at end of program line 104-104 //MJ" />
   </component>
 </project>

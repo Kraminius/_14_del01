@@ -16,22 +16,12 @@ public class Test {
         6 & 8 = 5/36
         7 = 6/36 = 1/6
         */
-        int slag1, slag2, sum, sumtest, to, tre, fire, fem, seks, syv, otte, ni, ti, elleve, tolv;
+        int
+                slag1 = 0, slag2 = 0, sum = 0, sumtest = 0, to = 0,
+                tre = 0, fire = 0, fem = 0, seks = 0, syv = 0, otte = 0,
+                ni = 0, ti = 0, elleve = 0, tolv = 0;
         Random test = new Random();
-        slag1=0;
-        slag2=0;
-        sum=0;
-        to=0;
-        tre=0;
-        fire=0;
-        fem=0;
-        seks=0;
-        syv=0;
-        otte=0;
-        ni=0;
-        ti=0;
-        elleve=0;
-        tolv=0;
+
         //For loopet regner forekomsten af alle tilfælde to til tolv sammen i en int (to - tolv) ved 1000 terningekast.
         for (int i=0; i<1000; i++ ) {
             slag1 = test.nextInt((6-1)+1)+1;
