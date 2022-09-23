@@ -32,37 +32,37 @@ public class Test {
             System.out.println(slag2);
                 switch (sumtest) {
                     case 2:
-                        to = to+1;
+                        to += 1;
                         break;
                     case 3:
-                        tre = tre+1;
+                        tre += 1;
                         break;
                     case 4:
-                        fire = fire+1;
+                        fire += 1;
                         break;
                     case 5:
-                        fem = fem+1;
+                        fem += 1;
                         break;
                     case 6:
-                        seks = seks+1;
+                        seks += 1;
                         break;
                     case 7:
-                        syv = syv+1;
+                        syv += 1;
                         break;
                     case 8:
-                        otte = otte+1;
+                        otte += 1;
                         break;
                     case 9:
-                        ni = ni+1;
+                        ni += 1;
                         break;
                     case 10:
-                        ti = ti+1;
+                        ti += 1;
                         break;
                     case 11:
-                        elleve = elleve+1;
+                        elleve += 1;
                         break;
                     case 12:
-                        tolv = tolv+1;
+                        tolv += 1;
                         break;
                     default:
                         throw new IllegalStateException("Unexpected value: " + sumtest);
