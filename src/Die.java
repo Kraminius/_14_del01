@@ -2,36 +2,14 @@ import java.util.Random;
 
 public class Die {
 
-    private int eyes;
     private final int maximum = 6;
-    Random test = new Random();
+    private final int minimum = 1;
 
-    //Kontruktør
-    public Die(int eyes){
-
-        eyes = 1;
+    public int getMaximum() {
+        return maximum;
     }
 
-    //Kaste terninger
-    public int roll(){
-
-        eyes = test.nextInt((maximum-1)+1)+1;
-        return eyes;
+    public int getMinimum() {
+        return minimum;
     }
-
-    //Få terningens øjne som int
-    public int value(){
-
-        return eyes;
-    }
-
-    //Udskrivnings kriterie
-    public String toString(){
-
-        String answer;
-        answer = String.valueOf(eyes);
-        return answer;
-    }
-
-
 }
