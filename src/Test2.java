@@ -18,8 +18,8 @@ public class Test2 {
         */
 
         // Skaber terningerne
-        Terning t1 = new Terning(1);
-        Terning t2 = new Terning(1);
+        Die t1 = new Die(1);
+        Die t2 = new Die(1);
         //Værdier til test
         int
         sum = 0, sumtest = 0, to = 0,
@@ -28,10 +28,10 @@ public class Test2 {
 
         //For loopet regner forekomsten af alle tilfælde to til tolv sammen i en int (to - tolv) ved 1000 terningekast.
         for (int i=0; i<1000; i++ ) {
-            t1.kast();
-            t2.kast();
-            sum = (t1.værdi() + t2.værdi() + sum);
-            sumtest = (t1.værdi() + t2.værdi());
+            t1.roll();
+            t2.roll();
+            sum = (t1.value() + t2.value() + sum);
+            sumtest = (t1.value() + t2.value());
             System.out.println(t1);
             System.out.println(t2);
             switch (sumtest) {
