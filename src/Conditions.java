@@ -9,7 +9,7 @@ public class Conditions {
     then the player looses all points
      */
 
-    private boolean extraTurn, winnerSix, sixTurn, forty, win;
+    private boolean extraTurn, winnerSix, sixTurn, forty, win, oneHit;
     //Method one to check both double turn, snake eyes and double 6. (Condition 1, 2 and 3)
     public void CheckConditions(int[] rollDice, Player player){
         sixTurn = false;
@@ -18,6 +18,7 @@ public class Conditions {
             //Extra assignment 1.
             if (rollDice[0] == 1){
                 player.setScore(0);
+                oneHit =true;
                 // put 1 here maybe
             }
             else if (rollDice[0] == 6){
@@ -41,6 +42,7 @@ public class Conditions {
 
     public void startTurn(){
         extraTurn = false;
+        oneHit = false;
     }
 
     public void overForty(Player player){
@@ -99,5 +101,13 @@ public class Conditions {
 
     public void setWin(boolean win) {
         this.win = win;
+    }
+
+    public boolean isOneHit() {
+        return oneHit;
+    }
+
+    public void setOneHit(boolean oneHit) {
+        this.oneHit = oneHit;
     }
 }
