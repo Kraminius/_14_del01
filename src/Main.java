@@ -38,5 +38,8 @@ For info: hvis projektleder ikke kan svare, må du spørge kunden.
  */
     public static void main(String[] args) {
 
+
+        Game game = new Game(2);
+
     }
 }
