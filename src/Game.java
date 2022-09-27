@@ -27,6 +27,7 @@ public class Game {
         while (!conditions.isWin());
 
 
+
     }
 
 
@@ -41,8 +42,8 @@ public class Game {
 
         //Player needs to press something to start turn
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Player " + player.getNumber() +
-                " turn. Click something to roll!");
+        Display display = new Display();
+        display.startText(player);
         scanner.nextLine();
 
     }
@@ -53,7 +54,6 @@ public class Game {
         RollDice rollDice = new RollDice();
         rollDice.Roll();
 
-        System.out.println("Die 1: " + rollDice.getOurRolls()[0] + " Die 2: " + rollDice.getOurRolls()[1]);
 
         //Checks conditions
         conditions.CheckConditions(rollDice.getOurRolls(),player);
@@ -67,15 +67,26 @@ public class Game {
 
         //Calculates player total points
         HandlePoints handlePoints = new HandlePoints();
+
+        Display display = new Display();
         if(sumOfDice.getSum()!=2){
             handlePoints.GivePlayerPoints(player, sumOfDice);
         }
 
+        if (conditions.isWin()){
+            display.RollText(rollDice);
+            display.winningGameText(player);
+        }
+        else{
+            display.RollText(rollDice);
+            display.turnText(player, rollDice,conditions);
+        }
 
-        System.out.println("Total sum for player " + player.getNumber() + ": "+ player.getScore());
-        System.out.println();
+
+
 
     }
+
 
 
 
