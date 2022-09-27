@@ -38,5 +38,35 @@ For info: hvis projektleder ikke kan svare, må du spørge kunden.
  */
     public static void main(String[] args) {
 
+
+        Players players = new Players(2);
+
+        RollDice rollDice = new RollDice();
+        SumOfDice sumOfDice = new SumOfDice();
+        HandlePoints handlePoints = new HandlePoints();
+
+        for (int i = 0; i<10; i++){
+            rollDice.Roll();
+            System.out.println("Player 1 Die1: " + rollDice.getOurRolls()[0]+ " Die2: " + rollDice.getOurRolls()[1]);
+            sumOfDice.calcSum(rollDice);
+            handlePoints.GivePlayerPoints(0, players, sumOfDice);
+
+            rollDice.Roll();
+            System.out.println("Player 2 Die1: " + rollDice.getOurRolls()[0]+ " Die2: " + rollDice.getOurRolls()[1]);
+            sumOfDice.calcSum(rollDice);
+            handlePoints.GivePlayerPoints(1, players, sumOfDice);
+
+        }
+
+        System.out.println(players.getAllPlayers()[0].getScore());
+        System.out.println(players.getAllPlayers()[1].getScore());
+
+
+
+
+
+
+
+
     }
 }
