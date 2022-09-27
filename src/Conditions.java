@@ -31,7 +31,6 @@ public class Conditions {
             else {
 
                 extraTurn = true;
-                System.out.println("Congratulations, you rolled double. Roll again!");
             }
         }
         else{
