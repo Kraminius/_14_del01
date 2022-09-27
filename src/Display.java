@@ -15,6 +15,7 @@ public class Display {
 
         if(conditions.isOneHit()){
 
+            System.out.println();
             System.out.println("Player"+player.getNumber() + " hit double 1 and lost all his points");
             System.out.println("Total sum for player" + player.getNumber() + ": "+ player.getScore());
             System.out.println();
@@ -23,17 +24,22 @@ public class Display {
         else if(conditions.isExtraTurn()){
 
             if(rollDice.getOurRolls()[0] != 6){
+                System.out.println();
                 System.out.println("Total sum for player" + player.getNumber() + ": "+ player.getScore());
                 System.out.println("Player " + player.getNumber() +
                         " hit double " + rollDice.getOurRolls()[0] + ". Roll again!");
+                System.out.println();
             }
             else{
+                System.out.println();
                 System.out.println("Total sum for player" + player.getNumber() + ": "+ player.getScore());
                 System.out.println("Player " + player.getNumber() +
                         " hit double " + rollDice.getOurRolls()[0] + ". Roll double 6 again to win the game!");
+                System.out.println();
             }
 
         }else {
+            System.out.println();
             System.out.println("Total sum for player" + player.getNumber() + ": "+ player.getScore());
             System.out.println();
         }
