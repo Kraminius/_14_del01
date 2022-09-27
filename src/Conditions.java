@@ -11,15 +11,16 @@ public class Conditions {
 
     private boolean extraTurn, winnerSix, sixTurn, forty, win;
     //Method one to check both double turn, snake eyes and double 6. (Condition 1, 2 and 3)
-    public void CheckConditions(RollDice rollDice, Players players, int playerNumber){
+    public void CheckConditions(int[] rollDice, Player player){
         sixTurn = false;
-        if (rollDice.getOurRolls()[0] == rollDice.getOurRolls()[1]){
+        if (rollDice[0] == rollDice[1]){
+
             //Extra assignment 1.
-            if (rollDice.getOurRolls()[0] == 1){
-                players.getAllPlayers()[playerNumber].setScore(0);
+            if (rollDice[0] == 1){
+                player.setScore(0);
                 // put 1 here maybe
             }
-            else if (rollDice.getOurRolls()[0] == 6){
+            else if (rollDice[0] == 6){
                 if (winnerSix == true){
                     sixTurn = true;
                 }
@@ -27,18 +28,22 @@ public class Conditions {
                 extraTurn = true;
             }
             else {
+
                 extraTurn = true;
             }
+        }
+        else{
+            winnerSix = false;
+            extraTurn = false;
         }
     }
 
     public void startTurn(){
         extraTurn = false;
-        winnerSix = false;
     }
 
-    public void overForty(Players players, int playerNumber){
-        if(players.getAllPlayers()[playerNumber].getScore() >= 40){
+    public void overForty(Player player){
+        if(player.getScore() >= 40){
             forty = true;
         }
         else{
@@ -46,7 +51,7 @@ public class Conditions {
         }
     }
 
-    public void winCondition(RollDice rollDice){
+    public void WinCondition(RollDice rollDice){
         if(forty == true && extraTurn == true){
             win = true;
         }
@@ -55,5 +60,43 @@ public class Conditions {
         }
     }
 
+    public boolean isExtraTurn() {
+        return extraTurn;
+    }
 
+    public void setExtraTurn(boolean extraTurn) {
+        this.extraTurn = extraTurn;
+    }
+
+    public boolean isWinnerSix() {
+        return winnerSix;
+    }
+
+    public void setWinnerSix(boolean winnerSix) {
+        this.winnerSix = winnerSix;
+    }
+
+    public boolean isSixTurn() {
+        return sixTurn;
+    }
+
+    public void setSixTurn(boolean sixTurn) {
+        this.sixTurn = sixTurn;
+    }
+
+    public boolean isForty() {
+        return forty;
+    }
+
+    public void setForty(boolean forty) {
+        this.forty = forty;
+    }
+
+    public boolean isWin() {
+        return win;
+    }
+
+    public void setWin(boolean win) {
+        this.win = win;
+    }
 }
