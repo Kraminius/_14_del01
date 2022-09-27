@@ -4,9 +4,9 @@ public class HandlePoints {
 
 
 
-    public void GivePlayerPoints(int playerNumb, Players players, SumOfDice sumOfDice){
+    public void GivePlayerPoints(Player player, SumOfDice sumOfDice){
 
-        players.getAllPlayers()[playerNumb].setScore(players.getAllPlayers()[playerNumb].getScore() + sumOfDice.getSum());
+        player.setScore(player.getScore() + sumOfDice.getSum());
 
     }
 
