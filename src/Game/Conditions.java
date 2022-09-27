@@ -1,3 +1,5 @@
+package Game;
+
 public class Conditions {
     /*
     0. Extra assignments.
@@ -9,7 +11,7 @@ public class Conditions {
      */ //Note to describe condition set
     private boolean extraTurn, doubleSix, sixWin, forty, win, oneHit;
     //Method one to check both double turn, snake eyes and double 6. (Condition 1, 2 and 3)
-    public void CheckConditions(int[] rollDice, Player player){ //Uses the dice rolls and the assigned Player
+    public void CheckConditions(int[] rollDice, Player player){ //Uses the dice rolls and the assigned Game.Player
         sixWin = false;
         if (rollDice[0] == rollDice[1]){ //Checks if both rolled dice shows the same eyes
 

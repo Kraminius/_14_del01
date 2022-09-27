@@ -1,3 +1,5 @@
+package Game;
+
 public class SumOfDice {
     private int sum;
 

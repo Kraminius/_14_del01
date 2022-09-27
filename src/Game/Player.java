@@ -1,7 +1,9 @@
+package Game;
+
 public class Player {
     private int number; //The individual players score and number variables.
     private int score;
-    public Player(int playerNumber){ //The Players class calls this to set the player number.
+    public Player(int playerNumber){ //The Game.Players class calls this to set the player number.
         number = playerNumber;
     }
     public int getNumber() {

@@ -1,3 +1,5 @@
+package Game;
+
 import java.util.Scanner;
 
 public class Game {
@@ -36,7 +38,7 @@ public class Game {
         conditions.StartTurn();
         conditions.OverForty(player);
 
-        //Player needs to press something to start turn
+        //Game.Player needs to press something to start turn
         Scanner scanner = new Scanner(System.in);
         Display display = new Display();
         display.startText(player);
