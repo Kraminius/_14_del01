@@ -41,7 +41,7 @@ public class Game {
 
         //Player needs to press something to start turn
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Player " + player.getNumber() +
+        System.out.print("Player " + player.getNumber() +
                 " turn. Click something to roll!");
         scanner.nextLine();
 
@@ -53,7 +53,7 @@ public class Game {
         RollDice rollDice = new RollDice();
         rollDice.Roll();
 
-        System.out.println("Die1: " + rollDice.getOurRolls()[0] + " Die2: " + rollDice.getOurRolls()[1]);
+        System.out.println("Die 1: " + rollDice.getOurRolls()[0] + " Die 2: " + rollDice.getOurRolls()[1]);
 
         //Checks conditions
         conditions.CheckConditions(rollDice.getOurRolls(),player);
@@ -72,7 +72,8 @@ public class Game {
         }
 
 
-        System.out.println("Total sum for player " + player.getScore());
+        System.out.println("Total sum for player " + player.getNumber() + ": "+ player.getScore());
+        System.out.println();
 
     }
 
