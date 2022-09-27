@@ -9,6 +9,7 @@ public class SumOfDice {
     }
 
 
+
     public int getSum() {
         return sum;
     }
