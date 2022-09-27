@@ -3,6 +3,9 @@ public class Players {
     private Player[] allPlayers;
 
 
+    public Players(){
+
+    }
 
     public Players(int numberOfPlayers){
 
