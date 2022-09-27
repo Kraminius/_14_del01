@@ -9,7 +9,7 @@ public class Conditions {
     then the player looses all points
      */
 
-    private boolean extraTurn, winnerSix;
+    private boolean extraTurn, winnerSix, forty;
     //Method one to check both double turn, snake eyes and double 6. (Condition 1, 2 and 3)
     public void CheckConditions(RollDice rollDice, Players players, int playerNumber){
         if (rollDice.getOurRolls()[0] == rollDice.getOurRolls()[1]){
@@ -27,6 +27,19 @@ public class Conditions {
                 extraTurn = true;
             }
         }
+    }
+
+    public void overForty(Players players, int playerNumber){
+        if(players.getAllPlayers()[playerNumber].getScore() >= 40){
+            forty = true;
+        }
+        else{
+            forty = false;
+        }
+    }
+
+    public void winCondition(){
+
     }
 
 
