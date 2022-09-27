@@ -72,7 +72,7 @@ public class Game {
         }
 
 
-        System.out.println("Total sum for player " + player.getScore());
+        System.out.println("Total sum for player " + player.getNumber() + ": "+ player.getScore());
         System.out.println();
 
     }
