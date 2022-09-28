@@ -16,7 +16,7 @@ public class Game {
 
 
                 StartPlayerTurn(players.getAllPlayers()[currentPlayer.currentPlayerNumber-1], conditions);
-                RollProccess(players.getAllPlayers()[currentPlayer.currentPlayerNumber-1], conditions);
+                RollProcess(players.getAllPlayers()[currentPlayer.currentPlayerNumber-1], conditions);
                 if(conditions.isWin()){
                     conditions.setExtraTurn(false);
                 }
@@ -48,7 +48,7 @@ public class Game {
 
     }
 
-    public void RollProccess(Player player,Conditions conditions){
+    public void RollProcess(Player player,Conditions conditions){
 
         //Rolls
         RollDice rollDice = new RollDice();
