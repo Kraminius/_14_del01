@@ -1,8 +1,8 @@
 public class CurrentPlayer {
 
 
-    int currentPlayerNumberVar;
-    int currentPlayerNumber;
+    private int currentPlayerNumberVar;
+    private int currentPlayerNumber;
 
 
     public CurrentPlayer(){

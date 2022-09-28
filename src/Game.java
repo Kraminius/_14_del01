@@ -15,8 +15,8 @@ public class Game {
             do{
 
 
-                StartPlayerTurn(players.getAllPlayers()[currentPlayer.currentPlayerNumber-1], conditions);
-                RollProcess(players.getAllPlayers()[currentPlayer.currentPlayerNumber-1], conditions);
+                StartPlayerTurn(players.getAllPlayers()[currentPlayer.getCurrentPlayerNumber()-1], conditions);
+                RollProcess(players.getAllPlayers()[currentPlayer.getCurrentPlayerNumber()-1], conditions);
                 if(conditions.isWin()){
                     conditions.setExtraTurn(false);
                 }
