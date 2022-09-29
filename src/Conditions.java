@@ -1,5 +1,4 @@
 public class Conditions {
-
     /*
     0. Extra assignments.
     1. The player looses all points if the players rolls snake eyes.
@@ -7,45 +6,42 @@ public class Conditions {
     3. The player wins if he rolls double 6, in last roll and then rolls double 6 again.
     4. The player wins if he rolls double after reaching 40 points, but not if he rolls snake eyes,
     then the player looses all points
-     */
-
-    private boolean extraTurn, winnerSix, sixTurn, forty, win, oneHit;
+     */ //Note to describe condition set
+    private boolean extraTurn, doubleSix, sixWin, forty, win, oneHit;
     //Method one to check both double turn, snake eyes and double 6. (Condition 1, 2 and 3)
-    public void CheckConditions(int[] rollDice, Player player){
-        sixTurn = false;
-        if (rollDice[0] == rollDice[1]){
+    public void CheckConditions(int[] rollDice, Player player){ //Uses the dice rolls and the assigned Player
+        sixWin = false;
+        if (rollDice[0] == rollDice[1]){ //Checks if both rolled dice shows the same eyes
 
             //Extra assignment 1.
-            if (rollDice[0] == 1){
+            if (rollDice[0] == 1){ //If you roll ones your score is set to 0
                 player.setScore(0);
                 oneHit =true;
                 // put 1 here maybe
             }
-            else if (rollDice[0] == 6){
-                if (winnerSix == true){
-                    sixTurn = true;
+            else if (rollDice[0] == 6){ //If you roll sixes you either get the chance to win next round or win this round.
+                if (doubleSix){
+                    sixWin = true;
                 }
-                winnerSix = true;
+                doubleSix = true;
                 extraTurn = true;
-
             }
-            else {
-
+            else { //If you roll other than one or six you get an extra turn, and cant win with sixes next round
                 extraTurn = true;
+                doubleSix = false;
             }
         }
-        else{
-            winnerSix = false;
+        else{ //You didn't roll the same and therefore don't get another turn or get the chance to win with sixes.
+            doubleSix = false;
             extraTurn = false;
         }
     }
 
-    public void startTurn(){
+    public void StartTurn(){ //Sets booleans to be false on the very first turn
         extraTurn = false;
         oneHit = false;
     }
-
-    public void overForty(Player player){
+    public void OverForty(Player player){//Checks if the player has a score over forty
         if(player.getScore() >= 40){
             forty = true;
         }
@@ -53,12 +49,11 @@ public class Conditions {
             forty = false;
         }
     }
-
-    public void WinCondition(RollDice rollDice){
-        if(forty == true && extraTurn == true){
+    public void WinCondition(RollDice rollDice){ //Checks if the win conditions are met.
+        if(forty && extraTurn){
             win = true;
         }
-        else if(winnerSix == true && sixTurn == true){
+        else if(doubleSix && sixWin){
            win = true;
         }
     }
@@ -72,19 +67,19 @@ public class Conditions {
     }
 
     public boolean isWinnerSix() {
-        return winnerSix;
+        return doubleSix;
     }
 
     public void setWinnerSix(boolean winnerSix) {
-        this.winnerSix = winnerSix;
+        this.doubleSix = winnerSix;
     }
 
-    public boolean isSixTurn() {
-        return sixTurn;
+    public boolean isSixWin() {
+        return sixWin;
     }
 
-    public void setSixTurn(boolean sixTurn) {
-        this.sixTurn = sixTurn;
+    public void setSixWin(boolean sixWin) {
+        this.sixWin = sixWin;
     }
 
     public boolean isForty() {
