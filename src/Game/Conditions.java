@@ -19,7 +19,7 @@ public class Conditions {
             if (rollDice[0] == 1){ //If you roll ones your score is set to 0
                 player.setScore(0);
                 oneHit =true;
-                // put 1 here maybe
+                //put extraTurn = True;, if player rolls again after rolling snake eyes. Customer says we decide.
             }
             else if (rollDice[0] == 6){ //If you roll sixes you either get the chance to win next round or win this round.
                 if (doubleSix){
