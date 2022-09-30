@@ -1,11 +1,7 @@
 import java.util.Scanner;
 
 public class Game {
-
-
-
     public Game(int howManyPlayers){
-
         Players players = new Players(howManyPlayers);
         Conditions conditions = new Conditions();
         CurrentPlayer currentPlayer = new CurrentPlayer();
@@ -37,8 +33,8 @@ public class Game {
 
 
         //Sets start conditions variables
-        conditions.startTurn();
-        conditions.overForty(player);
+        conditions.StartTurn();
+        conditions.OverForty(player);
 
         //Player needs to press something to start turn
         Scanner scanner = new Scanner(System.in);
