@@ -81,17 +81,17 @@ public class Test {
                 }
         }
         //Printer forekomsten af hvert tilfælde (to til tolv) - normalfordelingens sandsynlighed
-        System.out.println("Tallet to " + (to - 1000/36));
-        System.out.println("Tallet tre " + (tre - 1000/18));
-        System.out.println("Tallet fire " + (fire - 1000/12));
-        System.out.println("Tallet fem " + (fem - 1000/9));
-        System.out.println("Tallet seks " + (seks - (1000/36*5)));
-        System.out.println("Tallet syv " + (syv - 1000/6));
-        System.out.println("Tallet otte " + (otte - (1000/36*5)));
-        System.out.println("Tallet ni " + (ni - 1000/9));
-        System.out.println("Tallet ti " + (ti - 1000/12));
-        System.out.println("Tallet elleve " + (elleve - 1000/18));
-        System.out.println("Tallet tolv " + (tolv - 1000/36));
+        System.out.println("Tallet to " + (to));
+        System.out.println("Tallet tre " + (tre));
+        System.out.println("Tallet fire " + (fire));
+        System.out.println("Tallet fem " + (fem));
+        System.out.println("Tallet seks " + (seks));
+        System.out.println("Tallet syv " + (syv));
+        System.out.println("Tallet otte " + (otte));
+        System.out.println("Tallet ni " + (ni));
+        System.out.println("Tallet ti " + (ti));
+        System.out.println("Tallet elleve " + (elleve));
+        System.out.println("Tallet tolv " + (tolv));
         System.out.println("Samlet sum af alle forekomster: " + sum);
 
         /*Printer sandt for tal indenfor normalfordelingen som er +-5% af 7000 (gennemsnit øjne ved 1000 terningekast),
