@@ -3,6 +3,8 @@ package Game;
 import java.util.Scanner;
 
 public class Game {
+
+
     public Game(int howManyPlayers){
         Players players = new Players(howManyPlayers);
         Conditions conditions = new Conditions();
